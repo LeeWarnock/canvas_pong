@@ -1,8 +1,19 @@
 <html>
 Lee Warnock was here! <b>This tesxt is think</b> <i>this text is slanted</i>
+<canvas id="gameCanvas" width="800" height="600"></canvas>
 
 <script>
-    console.log("Hello world!");
+var canvas;
+var canvasContext;
+
+window.onload = function() {
+    console.log("Hello World!");
+    canvas = document.getElementById('gameCanvas');
+    canvasContext = canvas.getContext('2d');
+    canvasContext.fillstyle = 'black';
+    canvasContext.fillRect(0,0,canvas.width, canvas.height);
+}
+
 </script>
 
 </html>
